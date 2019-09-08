@@ -1,7 +1,11 @@
 package com.zcq.client;
 
+import com.zcq.model.po.ProductInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.List;
 
 /**
  * feign客户端,调用product服务的接口
@@ -15,4 +19,6 @@ public interface ProductClient {
     @GetMapping("/msg")
     String productMsg();
 
+    @PostMapping("/product/listForOrder")
+    List<ProductInfo> listForOrder(List<String> productIdList);
 }
