@@ -11,6 +11,8 @@
     <modules>
         <module>eureka</module>
         <module>client</module>
+        <module>product</module>
+        <module>order</module>
     </modules>
 
     <parent>
@@ -38,7 +40,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
