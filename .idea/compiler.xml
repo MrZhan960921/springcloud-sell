@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client" />
-        <module name="product" />
+        <module name="product-server" />
+        <module name="product-client" />
         <module name="order" />
         <module name="eureka" />
+        <module name="product-common" />
+        <module name="client" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +21,9 @@
       <module name="eureka" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="product" options="-parameters" />
+      <module name="product-client" options="-parameters" />
+      <module name="product-common" options="-parameters" />
+      <module name="product-server" options="-parameters" />
       <module name="springcloud-sell" options="-parameters" />
     </option>
   </component>
