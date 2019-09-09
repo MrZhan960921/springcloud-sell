@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MrZhan960921/config-repo.git
+          username: zcq960921@163.com
+          password: zcq960921
+          #自定义本地git仓库
+          basedir: /Users/zcq/code/springcloud-sell/config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#management:
+#  endpoints:
+#    web:
+#      expose: "*"
+server:
+  port: 9100
