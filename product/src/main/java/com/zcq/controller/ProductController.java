@@ -1,5 +1,6 @@
 package com.zcq.controller;
 
+import com.zcq.model.dto.CartDTO;
 import com.zcq.model.po.ProductCategory;
 import com.zcq.model.po.ProductInfo;
 import com.zcq.model.vo.ProductInfoVO;
@@ -73,5 +74,14 @@ public class ProductController {
     @PostMapping("/listForOrder")
     public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList) {
         return productService.findList(productIdList);
+    }
+
+    /**
+     * 扣库存
+     * @param cartDTOList 购物车
+     */
+    @PostMapping("/decreaseStock")
+    public void decreaseStock(@RequestBody List<CartDTO> cartDTOList) {
+        productService.decreaseStock(cartDTOList);
     }
 }
