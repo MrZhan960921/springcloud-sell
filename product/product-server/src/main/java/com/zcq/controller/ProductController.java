@@ -1,6 +1,6 @@
 package com.zcq.controller;
 
-import com.zcq.model.dto.CartDTO;
+import com.zcq.common.DecreaseStockInput;
 import com.zcq.model.po.ProductCategory;
 import com.zcq.model.po.ProductInfo;
 import com.zcq.model.vo.ProductInfoVO;
@@ -78,10 +78,10 @@ public class ProductController {
 
     /**
      * 扣库存
-     * @param cartDTOList 购物车
+     * @param decreaseStockInputList
      */
     @PostMapping("/decreaseStock")
-    public void decreaseStock(@RequestBody List<CartDTO> cartDTOList) {
-        productService.decreaseStock(cartDTOList);
+    public void decreaseStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList) {
+        productService.decreaseStock(decreaseStockInputList);
     }
 }

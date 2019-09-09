@@ -1,0 +1,17 @@
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/controller/ProductController.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/service/impl/ProductServiceImpl.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/utils/ResultVOUtil.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/controller/ServerController.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/model/po/ProductCategory.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/service/impl/CategoryServiceImpl.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/enums/ResultEnum.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/service/ProductService.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/model/vo/ProductInfoVO.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/model/vo/ResultVO.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/service/CategoryService.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/enums/ProductStatusEnum.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/exception/ProductException.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/model/vo/ProductVO.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/repository/ProductCategoryRepository.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/repository/ProductInfoRepository.java
+/Users/zcq/code/springcloud-sell/product/product-server/src/main/java/com/zcq/model/po/ProductInfo.java

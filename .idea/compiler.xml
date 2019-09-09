@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product-server" />
+        <module name="order-common" />
         <module name="product-client" />
-        <module name="order" />
         <module name="eureka" />
         <module name="product-common" />
+        <module name="order-server" />
+        <module name="order-client" />
         <module name="client" />
       </profile>
     </annotationProcessing>
@@ -20,6 +22,9 @@
       <module name="client" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="order" options="-parameters" />
+      <module name="order-client" options="-parameters" />
+      <module name="order-common" options="-parameters" />
+      <module name="order-server" options="-parameters" />
       <module name="product" options="-parameters" />
       <module name="product-client" options="-parameters" />
       <module name="product-common" options="-parameters" />
