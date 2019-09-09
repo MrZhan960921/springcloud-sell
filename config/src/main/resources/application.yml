@@ -14,9 +14,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-#management:
-#  endpoints:
-#    web:
-#      expose: "*"
+#暴露自动更新配置文件接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 server:
   port: 9100
