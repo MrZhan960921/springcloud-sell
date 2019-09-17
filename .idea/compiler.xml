@@ -9,6 +9,7 @@
         <module name="product-server" />
         <module name="order-common" />
         <module name="product-client" />
+        <module name="api-gateway" />
         <module name="config" />
         <module name="eureka" />
         <module name="product-common" />
@@ -20,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="client" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="eureka" options="-parameters" />
