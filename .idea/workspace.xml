@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="302dde4f-fe5c-425e-bacb-32e021cd3d73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/constant/RedisConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/utils/CookieUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/com/zcq/filter/TokenFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/com/zcq/filter/TokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthBuyerFilter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,14 +30,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+            <state relative-caret-position="816">
+              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthBuyerFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -93,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/order/order-server/src/test/java/com/zcq/OrderApplicationTests.java" />
         <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/zcq/message/MqReceiver.java" />
         <option value="$PROJECT_DIR$/order/order-server/src/test/java/com/zcq/MqSenderTest.java" />
@@ -144,6 +146,7 @@
         <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/zcq/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthBuyerFilter.java" />
       </list>
     </option>
   </component>
@@ -343,10 +346,10 @@
       <recent name="$PROJECT_DIR$/product/product-server/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zcq.filter" />
       <recent name="com.zcq.constant" />
       <recent name="com.zcq.utils" />
       <recent name="com.zcq.model.vo" />
-      <recent name="com.zcq.filter" />
       <recent name="com.zcq" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -529,7 +532,7 @@
       <workItem from="1568118321041" duration="8712000" />
       <workItem from="1568203480955" duration="6477000" />
       <workItem from="1568302353999" duration="33000" />
-      <workItem from="1568704738567" duration="17152000" />
+      <workItem from="1568704738567" duration="17395000" />
     </task>
     <servers />
   </component>
@@ -566,7 +569,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78686000" />
+    <option name="totallyTimeSpent" value="78929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1187" y="34" width="1410" height="1353" extended-state="0" />
@@ -578,9 +581,9 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.31578946" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.31578946" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.28945282" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.28945282" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.3298969" />
@@ -593,7 +596,7 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="13" visible="true" weight="0.407613" />
+      <window_info anchor="bottom" id="Run" order="13" weight="0.407613" />
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -623,13 +626,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22440">
-          <caret line="1136" column="17" selection-start-line="1136" selection-start-column="17" selection-end-line="1136" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/zcq/message/MqReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1024,11 +1020,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+        <state relative-caret-position="816">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/zcq/filter/AuthBuyerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
         </state>
       </provider>
     </entry>
