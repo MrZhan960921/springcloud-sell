@@ -23,3 +23,5 @@ zuul:
   ignored-patterns:
     - /product/product/listForOrder
     - /myProduct/product/listForOrder
+  #全局敏感头设置，全部忽略，可传递cookie
+  sensitive-headers:
