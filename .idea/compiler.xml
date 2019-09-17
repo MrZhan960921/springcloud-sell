@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="user" />
         <module name="product-server" />
         <module name="order-common" />
         <module name="product-client" />
@@ -34,6 +35,7 @@
       <module name="product-common" options="-parameters" />
       <module name="product-server" options="-parameters" />
       <module name="springcloud-sell" options="-parameters" />
+      <module name="user" options="-parameters" />
     </option>
   </component>
 </project>
