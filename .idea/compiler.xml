@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client" />
         <module name="product-server" />
         <module name="order-common" />
         <module name="product-client" />
+        <module name="config" />
         <module name="eureka" />
         <module name="product-common" />
         <module name="order-server" />
         <module name="order-client" />
-        <module name="config" />
+        <module name="client" />
       </profile>
     </annotationProcessing>
   </component>

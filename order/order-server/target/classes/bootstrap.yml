@@ -7,6 +7,15 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
+      #生产者消费者绑定 这里可以配置分组等来保证只有一个消费者接收到消息
+    stream:
+      bindings:
+        input:
+          destination: mqTestDefault
+        output:
+          destination: mqTestDefault
+          #发送的消息被序列化
+          contentType: application/json
   rabbitmq:
     host: localhost
     port: 5672
