@@ -13,9 +13,13 @@ server:
 ## 自定义路由规则
 zuul:
   routes:
-#    myProduct:  #路由规则名
-#      path: /myProduct/** #自定义路由地址
-#      serviceId: product #服务名
+    #    myProduct:  #路由规则名
+    #      path: /myProduct/** #自定义路由地址
+    #      serviceId: product #服务名
 
-  ## 简介写法
+    ## 简介写法
     product: /myProduct/**
+    # 禁止某个路由地址被访问
+  ignored-patterns:
+    - /product/product/listForOrder
+    - /myProduct/product/listForOrder
