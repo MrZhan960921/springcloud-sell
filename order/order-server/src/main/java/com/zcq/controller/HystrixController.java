@@ -2,6 +2,7 @@ package com.zcq.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,10 @@ import java.util.Arrays;
 @DefaultProperties(defaultFallback = "defaultFallback")
 public class HystrixController {
 
-    @HystrixCommand(fallbackMethod = "fallback")
+    //设置服务降级超时时间
+    @HystrixCommand(fallbackMethod = "fallback", commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+    })
     @GetMapping("/getProductInfoList")
     public String getProductInfoList() {
         //调用商品服务
@@ -33,6 +37,7 @@ public class HystrixController {
 
     /**
      * 默认的服务降级
+     *
      * @return
      */
     private String defaultFallback() {
