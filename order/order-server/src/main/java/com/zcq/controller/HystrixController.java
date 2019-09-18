@@ -1,5 +1,6 @@
 package com.zcq.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import java.util.Arrays;
  * @date 2019-09-18 13:45
  */
 @RestController
+@DefaultProperties(defaultFallback = "defaultFallback")
 public class HystrixController {
 
     @HystrixCommand(fallbackMethod = "fallback")
@@ -27,5 +29,13 @@ public class HystrixController {
 
     private String fallback() {
         return "太拥挤了，请稍候再试~~";
+    }
+
+    /**
+     * 默认的服务降级
+     * @return
+     */
+    private String defaultFallback() {
+        return "默认提示:太拥挤了，请稍候再试~~";
     }
 }
