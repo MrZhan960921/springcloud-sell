@@ -3,6 +3,7 @@ package com.zcq.client;
 import com.zcq.common.DecreaseStockInput;
 import com.zcq.common.ProductInfoOutput;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,7 +16,7 @@ import java.util.List;
  * @author Maybeeeee
  * @date 2019-09-09 01:25
  */
-@FeignClient(name = "PRODUCT")
+@FeignClient(name = "PRODUCT", fallback = ProductClientFallback.class)
 public interface ProductClient {
 
     @GetMapping("/msg")
