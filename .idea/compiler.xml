@@ -10,13 +10,13 @@
         <module name="product-server" />
         <module name="order-common" />
         <module name="product-client" />
-        <module name="api-gateway" />
-        <module name="config" />
+        <module name="client" />
         <module name="eureka" />
+        <module name="api-gateway" />
         <module name="product-common" />
         <module name="order-server" />
         <module name="order-client" />
-        <module name="client" />
+        <module name="config" />
       </profile>
     </annotationProcessing>
   </component>
