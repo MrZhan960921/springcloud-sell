@@ -18,9 +18,14 @@ import java.util.Arrays;
 @DefaultProperties(defaultFallback = "defaultFallback")
 public class HystrixController {
 
-    //设置服务降级超时时间
+
     @HystrixCommand(fallbackMethod = "fallback", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+            //设置服务降级超时时间
+//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000"),
+            @HystrixProperty(name = "circuitBreaker.enabled", value = "true"), //设置熔断
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"), //断路器最小请求
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), //最小时间窗口
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"), //错误百分比
     })
     @GetMapping("/getProductInfoList")
     public String getProductInfoList() {

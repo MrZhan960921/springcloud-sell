@@ -75,7 +75,7 @@ public class ProductController {
     @PostMapping("/listForOrder")
     public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList) throws InterruptedException {
         //模拟超时
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         return productService.findList(productIdList);
     }
 
